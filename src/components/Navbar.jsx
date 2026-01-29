@@ -17,6 +17,7 @@ const navItems = [
 export function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [showName, setShowName] = useState(false); // Show name when scrolled past hero
     const [activeSection, setActiveSection] = useState('home');
     const { language } = useLanguage();
     const t = translations[language].nav;
@@ -24,6 +25,8 @@ export function Navbar() {
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 20);
+            // Show name in navbar when scrolled past ~400px (hero section height)
+            setShowName(window.scrollY > 400);
         };
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
@@ -53,18 +56,22 @@ export function Navbar() {
     }, []);
 
     const scrollToSection = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            const offset = 80; // Navbar height + buffer
-            const elementPosition = element.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.scrollY - offset;
+        setIsOpen(false); // Close menu first for immediate feedback
 
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
-            setIsOpen(false);
-        }
+        // Delay scroll to prevent menu animation from interrupting
+        setTimeout(() => {
+            const element = document.getElementById(id);
+            if (element) {
+                const offset = 80; // Navbar height + buffer
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }, 50);
     };
 
     return (
@@ -75,8 +82,38 @@ export function Navbar() {
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-center h-20">
-                    {/* Desktop Menu - Centered */}
+                <div className={`flex items-center h-20 transition-all duration-300 ${showName ? 'justify-between' : 'justify-center'}`}>
+                    {/* Desktop: Name/Logo on Left (shows when scrolled) */}
+                    {showName && (
+                        <div className="hidden md:block flex-shrink-0">
+                            <motion.button
+                                onClick={() => scrollToSection('home')}
+                                initial={{ opacity: 0, x: -20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.3 }}
+                                className="py-2 px-4 rounded-full bg-blue-200 dark:bg-blue-900/30 text-blue-600 dark:text-white text-lg font-medium hover:bg-blue-300 dark:hover:bg-blue-900/50 transition-all"
+                            >
+                                Muchammad Dimas Mufti Baskara
+                            </motion.button>
+                        </div>
+                    )}
+
+                    {/* Mobile: Centered Name (shows when scrolled) */}
+                    {showName && (
+                        <div className="md:hidden absolute left-1/2 -translate-x-1/2">
+                            <motion.button
+                                onClick={() => scrollToSection('home')}
+                                initial={{ opacity: 0, y: -10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.3 }}
+                                className="py-2 px-4 rounded-3xl bg-blue-200 dark:bg-blue-900/30 text-blue-600 dark:text-white text-sm font-medium hover:bg-blue-300 dark:hover:bg-blue-900/50 transition-all whitespace-nowrap"
+                            >
+                                Muchammad Dimas Mufti Baskara
+                            </motion.button>
+                        </div>
+                    )}
+
+                    {/* Desktop Navigation - Centered at top, Right when scrolled */}
                     <div className="hidden md:flex items-center space-x-8">
                         {navItems.map((item) => (
                             <button
@@ -116,6 +153,8 @@ export function Navbar() {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.2, ease: 'easeInOut' }}
+                        style={{ pointerEvents: 'auto', overflow: 'hidden' }}
                         className="md:hidden bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 relative z-50"
                     >
                         <div className="px-4 pt-2 pb-6 space-y-1">

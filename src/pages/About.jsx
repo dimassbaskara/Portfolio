@@ -215,6 +215,7 @@ export default function About() {
     // Auto-advance carousel every 5 seconds
     useEffect(() => {
         const timer = setInterval(() => {
+            setDirection(1); // Always slide right for auto-advance
             setCurrentPhoto((prev) => (prev + 1) % photos.length);
         }, 5000);
         return () => clearInterval(timer);
