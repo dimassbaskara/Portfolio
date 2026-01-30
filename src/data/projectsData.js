@@ -215,8 +215,8 @@ export const allProjects = [
             '/projects/inpact/image2.jpg'
         ],
         tagline: {
-            en: 'QR-based anti-counterfeit system for beauty product traceability',
-            id: 'Sistem anti-pemalsuan berbasis QR untuk ketertelusuran produk kecantikan'
+            en: 'QR-based anti-counterfeit system design for beauty product traceability',
+            id: 'Desain sistem anti-pemalsuan berbasis QR untuk ketertelusuran produk kecantikan'
         },
         challenge: {
             en: 'Combat counterfeit beauty products that pose health risks and damage brand reputation.',
@@ -227,7 +227,7 @@ export const allProjects = [
             id: 'Merancang sistem ketertelusuran berbasis kode QR yang memungkinkan konsumen memverifikasi keaslian produk via verifikasi terinspirasi blockchain.'
         },
         impact: {
-            en: 'Recognized as Top 100 Innovator at Paragon IN:PACT 2025',
+            en: 'Recognized as Top 100 Innovators at Paragon IN:PACT 2025',
             id: 'Diakui sebagai Top 100 Innovator di Paragon IN:PACT 2025'
         },
         tech: ['QR Code', 'System Design', 'Blockchain Concept'],

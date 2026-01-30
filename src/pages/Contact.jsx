@@ -98,6 +98,22 @@ export function Contact() {
                                 </a>
                             </div>
                         </div>
+
+                        <div className="flex items-center space-x-4">
+                            <div className="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-full flex items-center justify-center">
+                                <img
+                                    src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/medium.svg"
+                                    alt="Medium"
+                                    className="w-6 h-6 object-contain"
+                                />
+                            </div>
+                            <div>
+                                <p className="font-medium text-slate-900 dark:text-white">Medium</p>
+                                <a href="https://medium.com/@dimasbaskara" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                                    medium.com/@dimasbaskara
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
