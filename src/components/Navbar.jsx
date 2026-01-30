@@ -98,20 +98,37 @@ export function Navbar() {
                         </div>
                     )}
 
-                    {/* Mobile: Centered Name (shows when scrolled) */}
-                    {showName && (
-                        <div className="md:hidden absolute left-1/2 -translate-x-1/2">
-                            <motion.button
-                                onClick={() => scrollToSection('home')}
-                                initial={{ opacity: 0, y: -10 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.3 }}
-                                className="py-2 px-4 rounded-3xl bg-blue-200 dark:bg-blue-900/30 text-blue-600 dark:text-white text-sm font-medium hover:bg-blue-300 dark:hover:bg-blue-900/50 transition-all whitespace-nowrap"
-                            >
-                                Muchammad Dimas Mufti Baskara
-                            </motion.button>
+                    {/* Mobile Layout */}
+                    <div className="md:hidden w-full flex items-center justify-between relative">
+                        {/* Left: Hamburger Menu */}
+                        <button
+                            onClick={() => setIsOpen(!isOpen)}
+                            className="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none relative z-50"
+                        >
+                            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                        </button>
+
+                        {/* Center: Name (shows when scrolled) */}
+                        {showName && (
+                            <div className="absolute left-1/2 -translate-x-1/2">
+                                <motion.button
+                                    onClick={() => scrollToSection('home')}
+                                    initial={{ opacity: 0, y: -10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.3 }}
+                                    className="py-2 px-4 rounded-3xl bg-blue-200 dark:bg-blue-900/30 text-blue-600 dark:text-white text-sm font-medium hover:bg-blue-300 dark:hover:bg-blue-900/50 transition-all whitespace-nowrap"
+                                >
+                                    Muchammad Dimas Mufti Baskara
+                                </motion.button>
+                            </div>
+                        )}
+
+                        {/* Right: Language & Theme Toggles */}
+                        <div className="flex items-center space-x-2 relative z-50">
+                            <LanguageToggle />
+                            <ThemeToggle />
                         </div>
-                    )}
+                    </div>
 
                     {/* Desktop Navigation - Centered at top, Right when scrolled */}
                     <div className="hidden md:flex items-center space-x-8">
@@ -131,17 +148,6 @@ export function Navbar() {
                             <LanguageToggle />
                             <ThemeToggle />
                         </div>
-                    </div>
-
-                    <div className="md:hidden flex items-center space-x-2 ml-auto relative z-50">
-                        <LanguageToggle />
-                        <ThemeToggle />
-                        <button
-                            onClick={() => setIsOpen(!isOpen)}
-                            className="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none relative z-50"
-                        >
-                            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-                        </button>
                     </div>
                 </div>
             </div>
