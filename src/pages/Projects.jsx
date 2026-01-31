@@ -206,7 +206,7 @@ function ProjectModal({ project, onClose, language }) {
                             {t.tech.map((tech) => (
                                 <span
                                     key={tech}
-                                    className="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-md text-xs font-semibold border border-slate-200 dark:border-slate-700"
+                                    className="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded-md text-xs font-semibold border border-slate-200 dark:border-slate-700"
                                 >
                                     {tech}
                                 </span>
@@ -356,7 +356,7 @@ export function Projects() {
                                             <motion.span
                                                 key={tech}
                                                 whileHover={{ scale: 1.1, backgroundColor: 'rgb(59 130 246 / 0.1)' }}
-                                                className="flex items-center text-xs text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded transition-colors"
+                                                className="flex items-center text-xs text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded transition-colors"
                                             >
                                                 <Tag className="w-3 h-3 mr-1" /> {tech}
                                             </motion.span>

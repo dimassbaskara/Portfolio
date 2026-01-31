@@ -78,6 +78,90 @@ export const allProjects = [
         links: { demo: null, github: '#' }
     },
     {
+        id: 'coffee-analysis',
+        title: {
+            en: 'Coffee Consumption & Health Impact Analysis',
+            id: 'Analisis Pola Konsumsi Kopi & Dampak Kesehatan'
+        },
+        category: 'Big Data',
+        featured: true,
+        organization: {
+            en: 'Academic Project',
+            id: 'Proyek Akademik'
+        },
+        timeline: {
+            en: '2025',
+            id: '2025'
+        },
+        images: [
+            '/projects/coffee/coffee1.jpg',
+            '/projects/coffee/5v.jpg',
+            '/projects/coffee/tools.jpg',
+            '/projects/coffee/etl.jpg',
+            '/projects/coffee/eda.jpg',
+            '/projects/coffee/ml.jpg'
+        ],
+        tagline: {
+            en: 'Big Data analytics on coffee consumption patterns and health impacts using distributed computing',
+            id: 'Analitik Big Data pada pola konsumsi kopi dan dampak kesehatan menggunakan komputasi terdistribusi'
+        },
+        challenge: {
+            en: 'Analyze large-scale data to understand the relationship between coffee consumption patterns and various health indicators across diverse populations.',
+            id: 'Menganalisis data skala besar untuk memahami hubungan antara pola konsumsi kopi dan berbagai indikator kesehatan di berbagai populasi.'
+        },
+        solution: {
+            en: 'Built comprehensive big data pipeline using Pentaho Data Integration for ETL processes, Apache Spark and PySpark for distributed computing, and Hadoop for data storage. Implemented machine learning models (Random Forest & Logistic Regression) to predict health impacts and conducted exploratory data analysis following the 5V big data framework.',
+            id: 'Membangun pipeline big data komprehensif menggunakan Pentaho Data Integration untuk proses ETL, Apache Spark dan PySpark untuk komputasi terdistribusi, dan Hadoop untuk penyimpanan data. Mengimplementasikan model machine learning (Random Forest & Logistic Regression) untuk memprediksi dampak kesehatan dan melakukan analisis data eksploratori mengikuti framework 5V big data.'
+        },
+        impact: {
+            en: 'Processed and analyzed large-scale datasets to identify key patterns between coffee consumption and health outcomes using distributed big data technologies',
+            id: 'Memproses dan menganalisis dataset skala besar untuk mengidentifikasi pola kunci antara konsumsi kopi dan hasil kesehatan menggunakan teknologi big data terdistribusi'
+        },
+        tech: ['PySpark', 'Apache Spark', 'Hadoop', 'Pentaho Data Integration', 'Python', 'Random Forest', 'Logistic Regression'],
+        links: { demo: null, github: null }
+    },
+    {
+        id: 'student-score-prediction',
+        title: {
+            en: 'Student Score Prediction System',
+            id: 'Sistem Prediksi Nilai Siswa'
+        },
+        category: 'Big Data',
+        featured: true,
+        organization: {
+            en: 'Academic Project',
+            id: 'Proyek Akademik'
+        },
+        timeline: {
+            en: '2025',
+            id: '2025'
+        },
+        images: [
+            '/projects/score/cover.jpg',
+            '/projects/score/akademik.jpg',
+            '/projects/score/ekonomi.jpg',
+            '/projects/score/lingkungan.jpg'
+        ],
+        tagline: {
+            en: 'Predicting high school final scores using Random Forest Classifier based on academic, economic, and environmental factors',
+            id: 'Memprediksi nilai akhir siswa SMA menggunakan Random Forest Classifier berdasarkan faktor akademik, ekonomi, dan lingkungan'
+        },
+        challenge: {
+            en: 'Predict student final scores by analyzing the complex interplay of multiple factors including academic performance, economic conditions, and environmental influences to enable early intervention for at-risk students.',
+            id: 'Memprediksi nilai akhir siswa dengan menganalisis interaksi kompleks dari berbagai faktor termasuk performa akademik, kondisi ekonomi, dan pengaruh lingkungan untuk memungkinkan intervensi dini bagi siswa berisiko.'
+        },
+        solution: {
+            en: 'Developed a Random Forest Classifier model with comprehensive feature engineering. Conducted feature importance analysis revealing AttendanceRate (28%), TestScore (24%), and StudyHours as primary predictors. Implemented comparative model evaluation and achieved robust prediction accuracy through data mining techniques.',
+            id: 'Mengembangkan model Random Forest Classifier dengan feature engineering komprehensif. Melakukan analisis feature importance yang mengungkapkan AttendanceRate (28%), TestScore (24%), dan StudyHours sebagai prediktor utama. Mengimplementasikan evaluasi model komparatif dan mencapai akurasi prediksi yang robust melalui teknik data mining.'
+        },
+        impact: {
+            en: 'Identified key factors affecting student performance with attendance rate as the most influential predictor, enabling data-driven educational interventions',
+            id: 'Mengidentifikasi faktor kunci yang mempengaruhi performa siswa dengan tingkat kehadiran sebagai prediktor paling berpengaruh, memungkinkan intervensi pendidikan berbasis data'
+        },
+        tech: ['Python', 'Random Forest', 'Scikit-learn', 'Feature Engineering', 'Data Mining'],
+        links: { demo: null, github: null }
+    },
+    {
         id: 'transjakarta-analysis',
         title: {
             en: 'Transjakarta Service Trouble Analysis',
@@ -195,6 +279,49 @@ export const allProjects = [
         links: { demo: null, github: null }
     },
     {
+        id: 'bank-microservice',
+        title: {
+            en: 'Cloud-Based Banking Microservice System',
+            id: 'Sistem Microservice Perbankan Berbasis Cloud'
+        },
+        category: 'Network',
+        featured: true,
+        organization: {
+            en: 'Academic Project',
+            id: 'Proyek Akademik'
+        },
+        timeline: {
+            en: '2025',
+            id: '2025'
+        },
+        images: [
+            '/projects/bank/cover.jpg',
+            '/projects/bank/concept.jpg',
+            '/projects/bank/desain.jpg',
+            '/projects/bank/api testing.jpg',
+            '/projects/bank/fungsionalitas.jpg',
+            '/projects/bank/fault tolerance.jpg'
+        ],
+        tagline: {
+            en: 'Microservice architecture for banking transaction simulation deployed on Huawei Cloud with Account Service, Transaction Service, and Gateway',
+            id: 'Arsitektur microservice untuk simulasi transaksi perbankan yang di-deploy pada Huawei Cloud dengan Account Service, Transaction Service, dan Gateway'
+        },
+        challenge: {
+            en: 'Design and implement a scalable, fault-tolerant cloud-based banking system using microservice architecture that can handle concurrent transactions while maintaining data consistency and high availability.',
+            id: 'Merancang dan mengimplementasikan sistem perbankan berbasis cloud yang scalable dan fault-tolerant menggunakan arsitektur microservice yang dapat menangani transaksi bersamaan sambil menjaga konsistensi data dan ketersediaan tinggi.'
+        },
+        solution: {
+            en: 'Deployed a microservice-based architecture on Huawei Cloud with three core services: Account Service for managing customer accounts and balances, Transaction Service for withdrawal and transfer operations, and Gateway for routing requests. Implemented RESTful APIs for inter-service communication, designed a comprehensive database schema, and built a responsive web dashboard for account and transaction management. Conducted extensive API testing using Postman and fault tolerance testing to ensure system reliability on cloud infrastructure.',
+            id: 'Mendeploy arsitektur berbasis microservice pada Huawei Cloud dengan tiga layanan inti: Account Service untuk mengelola akun dan saldo pelanggan, Transaction Service untuk operasi penarikan dan transfer, dan Gateway untuk routing request. Mengimplementasikan RESTful API untuk komunikasi antar-layanan, merancang skema database komprehensif, dan membangun dashboard web responsif untuk manajemen akun dan transaksi. Melakukan pengujian API ekstensif menggunakan Postman dan pengujian fault tolerance untuk memastikan keandalan sistem pada infrastruktur cloud.'
+        },
+        impact: {
+            en: 'Successfully implemented a distributed banking system demonstrating cloud computing principles, microservice architecture, and API-driven communication with fault tolerance capabilities',
+            id: 'Berhasil mengimplementasikan sistem perbankan terdistribusi yang mendemonstrasikan prinsip cloud computing, arsitektur microservice, dan komunikasi berbasis API dengan kemampuan fault tolerance'
+        },
+        tech: ['Huawei Cloud', 'Microservices', 'Cloud Computing', 'RESTful API', 'Postman', 'Gateway', 'Distributed Systems'],
+        links: { demo: null, github: null }
+    },
+    {
         id: 'smartseal',
         title: {
             en: 'SmartSeal Anti-Counterfeit System',
@@ -250,7 +377,7 @@ export const allProjects = [
             en: '2024',
             id: '2024'
         },
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop',
+        image: '/projects/website/ceo dashboard.jpg',
         tagline: {
             en: 'Executive dashboard tracking customer geos, product categories, and seller KPIs',
             id: 'Dashboard eksekutif melacak geo pelanggan, kategori produk, dan KPI penjual'
