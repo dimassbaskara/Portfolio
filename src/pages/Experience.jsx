@@ -5,6 +5,24 @@ import { translations } from '../translations/translations';
 
 const experiencesConfig = [
     {
+        key: 'bankIndonesia',
+        icon: Briefcase,
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe5JlNVB_blPWG5TXIthYX0tuDCMeJ9qQDreZhZtdg&s",
+        type: "work"
+    },
+    {
+        key: 'maturNuwun',
+        icon: Award,
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMi04yDu7NvNSF1iug-cEVnLKc5CPw2f1o7ZA8Hc1GopbpFZ1iHNDo9eo&s=10",
+        type: "contract"
+    },
+    {
+        key: 'kumon',
+        icon: Award,
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN19e6sx_9lazR0JvVAccd_XOP_U6HoXlmPQ&s",
+        type: "freelance"
+    },
+    {
         key: 'telkomsel',
         icon: Briefcase,
         logo: "https://assets.telkomsel.com/public/logo-telkomsel.png",
@@ -71,7 +89,7 @@ export function Experience() {
                                         <img
                                             src={exp.logo}
                                             alt={`${exp.organization} logo`}
-                                            className="w-full h-full object-contain"
+                                            className="max-w-full max-h-full object-contain"
                                         />
                                     </div>
                                 </div>

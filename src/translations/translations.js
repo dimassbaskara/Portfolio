@@ -26,7 +26,7 @@ export const translations = {
             subtitle: "Final Year Informatics student with a passion for Big Data Analytics and Infrastructure",
             journeyTitle: "The Journey",
             journey1: "I am currently a final year undergraduate student majoring in Informatics. My academic and professional journey has been driven by a curiosity for how large-scale systems process data.",
-            journey2: "From experienced in handling network monitoring dashboards at Telkomsel to leading student initiatives as Vice Chairman of Himpunan Mahasiswa Informatika UPNVJ, I balance technical depth with leadership responsibility.",
+            journey2: "From experienced in several work experiences through internships and projects to led student initiatives as Vice Chairman of Himpunan Mahasiswa Informatika UPNVJ, I balance technical depth with leadership responsibility.",
             educationTitle: "Education",
             degree: "Bachelor of Informatics",
             university: "Universitas Pembangunan Nasional Veteran Jakarta",
@@ -122,6 +122,24 @@ export const translations = {
                 period: "Sep - Dec 2024",
                 description: "Developed an end-to-end monitoring dashboard for 10,000+ network records, automating KPIs and reducing reporting time by 40%. This role strengthened my skills in data analysis, dashboard design, and cross-functional collaboration."
             },
+            bankIndonesia: {
+                title: "Data Analyst Intern",
+                organization: "Bank Indonesia KPw DKI Jakarta",
+                period: "Apr 2026 - Present",
+                description: "Assisted in the implementation of Bank Indonesia's payment system policies across the DKI Jakarta region under the Payment System Licensing and Policy Implementation Unit (DPIKSP). Designed and developed dashboards for tracking of QRIS Payment Implementation in Jakarta. Participated and supported the digital transaction awareness campaign through social media."
+            },
+            maturNuwun: {
+                title: "System Analyst",
+                organization: "PT Matur Nuwun Nusantara",
+                period: "Feb 2026 - Present",
+                description: "Spearheaded the design and workflow planning of a comprehensive internal operational system to digitalize employee daily activities, multi-level project approvals, and procurement tracking. Conducted thorough quality testing on the software to ensure seamless functionality, a user-friendly experience, and accurate visual design by developing comprehensive System Requirement Specifications (SRS) and Definition of Done (DoD). Authored structured, role-specific user manuals tailored for staff, managers, and directors to simplify onboarding and ensure smooth adoption across the organization."
+            },
+            kumon: {
+                title: "Social Media Manager",
+                organization: "Kumon Indonesia (Percetakan Negara Branch)",
+                period: "Jan 2026 - Present",
+                description: "Managed the social media presence of Kumon Indonesia at Percetakan Negara Branch on Instagram, consistently creating educational and promotional content to attract prospective parents. Planned and executed digital campaigns with organic content to drive student enrollment and engagement. Wrote persuasive captions, designed visual guidelines, and managed daily content scheduling effectively by gaining up to 18K+ viewers."
+            },
             hmif: {
                 title: "Vice Chairman",
                 organization: "Informatics Student Association (HMIF) UPNVJ",
@@ -183,7 +201,7 @@ export const translations = {
             subtitle: "Mahasiswa Informatika Tahun Akhir dengan passion di Big Data Analytics dan Infrastructure",
             journeyTitle: "Perjalanan",
             journey1: "Saya saat ini adalah mahasiswa sarjana tahun terakhir jurusan Informatika. Perjalanan akademis dan profesional saya didorong oleh rasa ingin tahu tentang bagaimana sistem skala besar memproses data.",
-            journey2: "Dari pengalaman menangani dashboard pemantauan jaringan di Telkomsel hingga memimpin inisiatif mahasiswa sebagai Wakil Ketua Himpunan Mahasiswa Informatika UPNVJ, saya menyeimbangkan kedalaman teknis dengan tanggung jawab kepemimpinan.",
+            journey2: "Dari berpengalaman dalam berbagai pengalaman kerja melalui magang dan proyek hingga memimpin inisiatif mahasiswa sebagai Wakil Ketua Himpunan Mahasiswa Informatika UPNVJ, saya menyeimbangkan kedalaman teknis dengan tanggung jawab kepemimpinan.",
             educationTitle: "Pendidikan",
             degree: "Sarjana Informatika",
             university: "Universitas Pembangunan Nasional Veteran Jakarta",
@@ -278,6 +296,24 @@ export const translations = {
                 organization: "Telkomsel",
                 period: "Sep - Des 2024",
                 description: "Mengembangkan dashboard pemantauan end-to-end untuk 10.000+ catatan jaringan, mengotomatiskan KPI dan mengurangi waktu pelaporan sebesar 40%. Peran ini memperkuat keterampilan saya dalam analisis data, desain dashboard, dan kolaborasi lintas fungsi."
+            },
+            bankIndonesia: {
+                title: "Data Analyst Intern",
+                organization: "Bank Indonesia KPw DKI Jakarta",
+                period: "Apr 2026 - Sekarang",
+                description: "Membantu implementasi kebijakan sistem pembayaran Bank Indonesia di wilayah DKI Jakarta di bawah Unit Perizinan dan Implementasi Kebijakan Sistem Pembayaran (DPIKSP). Merancang dan mengembangkan dashboard untuk pelacakan Implementasi Pembayaran QRIS di Jakarta. Berpartisipasi dan mendukung kampanye kesadaran transaksi digital melalui media sosial."
+            },
+            maturNuwun: {
+                title: "System Analyst",
+                organization: "PT Matur Nuwun Nusantara",
+                period: "Feb 2026 - Sekarang",
+                description: "Memimpin perancangan dan perencanaan alur kerja sistem operasional internal yang komprehensif untuk mendigitalisasi aktivitas harian karyawan, persetujuan proyek multi-level, dan pelacakan pengadaan. Melakukan pengujian kualitas menyeluruh pada perangkat lunak untuk memastikan fungsionalitas yang mulus, pengalaman yang ramah pengguna, dan desain visual yang akurat dengan mengembangkan System Requirement Specifications (SRS) dan Definition of Done (DoD) yang komprehensif. Menyusun manual pengguna terstruktur khusus per peran untuk staf, manajer, dan direktur guna menyederhanakan proses onboarding dan memastikan adopsi yang lancar di seluruh organisasi."
+            },
+            kumon: {
+                title: "Social Media Manager",
+                organization: "Kumon Indonesia (Cabang Percetakan Negara)",
+                period: "Jan 2026 - Sekarang",
+                description: "Mengelola kehadiran media sosial Kumon Indonesia di Cabang Percetakan Negara di Instagram, secara konsisten membuat konten edukatif dan promosi untuk menarik calon orang tua murid. Merencanakan dan melaksanakan kampanye digital dengan konten organik untuk mendorong pendaftaran siswa dan keterlibatan. Menulis caption persuasif, merancang panduan visual, dan mengelola penjadwalan konten harian secara efektif dengan meraih hingga 18K+ penonton."
             },
             hmif: {
                 title: "Wakil Ketua",
